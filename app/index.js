@@ -1,10 +1,11 @@
 import _ from 'lodash'
+import $ from 'jquery'
 function component(){
-  var element = document.createElement("div")
+  var element = $("<div></div>")
 
-  element.innerHTML = _.join(["hello","baiji"]," ")
+  element.html( _.join(["hello","baiji"]," "))
 
-  return element
+  return element[0]
 }
 
 document.body.appendChild( component())
