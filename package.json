@@ -6,7 +6,7 @@
     "react": "^15.4.2",
     "react-dom": "^15.4.2"
   },
-  "homepage": "https://baixiaoji.github.io/learn-react",
+  "homepage": "https://baixiaoji.github.io/learn-react/build",
   "devDependencies": {
     "react-scripts": "0.9.5"
   },
