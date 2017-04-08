@@ -5,7 +5,7 @@ import './index.css';
 //不要是. ..打头的引用都是去node_modules里找
 import 'bulma/css/bulma.css';
 
-ReactDOM.render(
+/*ReactDOM.render(
   <div className="hero is-dark is-fullheight">
     <div className="hero-body">
       <div className="container has-text-centered">
@@ -19,4 +19,18 @@ ReactDOM.render(
     </div>
   </div>,
   document.getElementById('root')
-);
+);*/
+function tick() {
+  const element = (
+    <div>
+      <h1>Hello, world!</h1>
+      <h2>It is {new Date().toLocaleTimeString()}.</h2>
+    </div>
+  );
+  ReactDOM.render(
+    element,
+    document.getElementById('root')
+  );
+}
+
+setInterval(tick, 1000);
