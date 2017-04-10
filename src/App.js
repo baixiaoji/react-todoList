@@ -13,7 +13,8 @@ class App extends Component {
     this.state = {
        newTodo: "test",
        todoList: [
-         {id:1,title: "吃放", status:"completed", deleted:false}
+         {id:1,title: "吃放", status:"completed", deleted:false},
+         {id:1,title: "睡觉😴", status:"completed", deleted:false}
        ]
     }
   }
