@@ -11,7 +11,7 @@ class App extends Component {
     super(props)
 
     this.state = {
-       newTodo: "",
+       newTodo: " ",
        todoList: [
          
        ]
@@ -68,7 +68,7 @@ class App extends Component {
     })
 
     this.setState({
-      newTodo: "",
+      newTodo: " ",
       todoList: this.state.todoList
     })
   }
