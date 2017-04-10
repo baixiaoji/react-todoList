@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import TodoInput from "./TodoInput"
-
+import TodoItem from "./TodoItem"
 class App extends Component {
   constructor(props){
     super(props)
@@ -16,7 +16,11 @@ class App extends Component {
   render() {
 
     let todos = this.state.todoList.map((item,index)=>{
-        return <li>{item.title}</li>
+        return (
+          <li>
+            <TodoItem todo={item} />
+          </li>
+        )
     })
     return (
       <div className="App">
