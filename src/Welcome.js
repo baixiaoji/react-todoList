@@ -8,14 +8,17 @@ class Welcome extends React.Component {
       test: "1"
     }
 
-    this.setState({
-      date: new Date(),
-      test: 'constructor'
-    })
+    setInterval(function () {
+      this.setState({
+        date: new Date(),
+        test: 'constructor'
+      })
+    }, 5000)
+
 
     console.log("我是在constructor里面将props和state初始化好了")
   }
-  componentWillMount(){
+  componentWillMount() {
     this.setState({
       date: new Date(),
       test: "componentWillMount"
@@ -24,7 +27,7 @@ class Welcome extends React.Component {
     console.log("运行到这里，说明马上就运行render")
   }
   render() {
-   
+
     console.log("这里就是 render")
     return (
       <div>
@@ -34,7 +37,7 @@ class Welcome extends React.Component {
       </div>
     );
   }
-  componentDidMount(){
+  componentDidMount() {
     this.setState({
       date: new Date(),
       test: "componentDidMount"
@@ -42,14 +45,14 @@ class Welcome extends React.Component {
     console.log("已经挂载到页面里了")
   }
 
-  componentWillReceiveProps(){
+  componentWillReceiveProps() {
     this.setState({
       date: new Date(),
       test: "componentWillReceiveProps"
     })
   }
 
-  shouldComponentUpdate(){
+  shouldComponentUpdate() {
     this.setState({
       date: new Date(),
       test: "shouldComponentUpdate"
@@ -57,15 +60,15 @@ class Welcome extends React.Component {
 
     return true;
   }
-
-  componentDidUpdate(){
-    this.setState({
-      date: new Date(),
-      test: "componentDidUpdate"
-    })
+  componentWillUpdate() {
+    
   }
 
-  componentWillUnmount(){
+  componentDidUpdate() {
+    
+  }
+
+  componentWillUnmount() {
     console.log("结束了")
   }
 }
