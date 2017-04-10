@@ -4,15 +4,16 @@ import ReactDOM from 'react-dom';
 import './index.css';
 //不要是. ..打头的引用都是去node_modules里找
 import 'bulma/css/bulma.css';
-import Welcome from './Welcome.js';
+import Welcome from './Welcome';
 // const Welcome = require("./Welcome.js")
 const ele = <Welcome name="baiji" />
+
 function tick() {
   ReactDOM.render(
     <div className="hero is-dark is-fullheight">
     <div className="hero-body">
       <div className="container has-text-centered">
-        {ele} 
+        {ele}
         <h2 className="subtitle">
           任务三 {new Date().toLocaleTimeString()}
         </h2>
