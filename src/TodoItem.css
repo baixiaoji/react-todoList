@@ -8,6 +8,11 @@
     padding: 0 10px;
     font-size: 20px;
 }
+input:checked+span {
+    /*background: #F9F9F9; */
+    text-decoration: line-through;
+    color: #ccc;
+}
 .toggle {
     text-align: center;
     width: 40px;
@@ -35,4 +40,5 @@
     background: transparent;
     border: none;
     cursor: pointer;
+    color:red;
 }
