@@ -42,5 +42,6 @@ input:checked+span {
     background: transparent;
     border: none;
     cursor: pointer;
-    color:red;
+    font-size: 20px;
+    /*color:red;*/
 }
