@@ -1,3 +1,9 @@
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+}
 .App {
   color: #333;
   border:1px solid #aaa;
@@ -9,7 +15,12 @@
   min-height:20em;
   box-shadow: 0 0 1em hsla(0,0%,0%,0.15)
 }
-
+.App h1{
+  text-align: center;
+}
+.App > .todoList > li{
+  line-height: 2em;
+}
 .App > .todoList > li:nth-child(odd){
   background: #eee;
 }
