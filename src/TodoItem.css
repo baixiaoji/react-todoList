@@ -5,26 +5,28 @@
 }
 .item span{
     flex:1;
-    padding: 0 10px;
+    padding:10px;
     font-size: 20px;
+    transition: background 0.2s;
+    font-family: 'helvetica neue';
+    font-weight: 200;
+    border-left: 1px solid #D1E2FF;
+}
+input[type="checkbox"] {
+    margin: 10px;
 }
 input:checked+span {
     /*background: #F9F9F9; */
     text-decoration: line-through;
     color: #ccc;
 }
+
 .toggle {
     text-align: center;
     width: 40px;
-    /* auto, since non-WebKit browsers doesn't support input styling */
     height: 40px;
-    /*position: absolute;
-    top: 0;
-    bottom: 0;
-    margin: auto 0;*/
     border: none;
     outline: none;
-    /* Mobile Safari */
     -webkit-appearance: none;
     appearance: none;
 }
