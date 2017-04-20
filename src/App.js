@@ -5,8 +5,23 @@ import './App.css';
 import TodoInput from "./TodoInput"
 import TodoItem from "./TodoItem"
 import * as localStore from "./localStore"
+// 导入LeanCloud
+import AV from "leancloud-storage"
 
-// console.log(localStore)
+var APP_ID = 'UgRO2nPJbvVAMRLIy2vs7z1e-gzGzoHsz';
+var APP_KEY = 'pzWUrSOWB6euFMFpvs51UsXl';
+AV.init({
+  appId: APP_ID,
+  appKey: APP_KEY
+});
+
+var TestObject = AV.Object.extend('TestObject');
+var testObject = new TestObject();
+testObject.save({
+  words: 'Hello World!'
+}).then(function(object) {
+  alert('LeanCloud Rocks!');
+})
 
 class App extends Component {
   constructor(props){
@@ -30,7 +45,7 @@ class App extends Component {
         )
     })
 
-    console.log(todos)
+    // console.log(todos)
     return (
       <div className="App">
         <h1>我的代办</h1>
